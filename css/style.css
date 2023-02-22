@@ -1,4 +1,9 @@
 /* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 img{
   width: 100%;
@@ -7,6 +12,7 @@ img{
 ul,ol{
   list-style-type: none;
 }
+
 
 /* BODY */
 body{
@@ -42,14 +48,47 @@ body{
 /* HEADER BAPP */
 
 .header-bapp{
-  height: 60px;
+  height: auto;
   background-color: rgb(234, 234, 234);
 }
 
 /* HEADER USER */
+
 .header-user{
   flex-basis: 35%;
   border-right: 1px solid gray;
+}
+
+/* USER */
+
+.user{
+  padding: 5px;
+  gap: 5px;
+}
+
+.user-avatar{
+  width: 50px;
+  aspect-ratio: 1/1;
+  object-fit: fill;
+  object-position: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-name{
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* ICONS */
+
+.icons{
+  padding: 15px;
+}
+
+.list-icons{
+  gap: 15px;
+  color: rgb(177, 177, 177);
 }
 
 /* HEADER CHAT */
