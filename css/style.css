@@ -128,3 +128,7 @@ body{
   font-size: 14px;
   color: rgb(142, 218, 252);
 }
+
+.user-search{
+  padding: 5px;
+}
