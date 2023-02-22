@@ -140,6 +140,12 @@ body{
 
 /* MAIN CHAT */
 
+.chat-message{
+  background-image: url("../img/BackgroundChat.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 .chat-bar{
   height: auto;
   padding: 5px;
