@@ -80,7 +80,7 @@ body{
   font-size: 16px;
 }
 
-.user-access, .notif-subtext{
+.user-access, .notif-subtext, .user-time{
   font-size: 12px;
   color: rgb(177, 177, 177);
 }
@@ -131,4 +131,8 @@ body{
 
 .user-search{
   padding: 5px;
+}
+
+.user-contact{
+  padding: 0 5px;
 }
