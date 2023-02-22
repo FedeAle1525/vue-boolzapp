@@ -7,3 +7,34 @@ img{
 ul,ol{
   list-style-type: none;
 }
+
+/* BODY */
+body{
+  position: relative;
+}
+
+/* PS-HEADER */
+
+.ps-header{
+  flex-basis: 100px;
+  background-color: rgb(0, 150, 136);
+}
+
+/* PS-MAIN */
+
+.ps-main{
+  flex-grow: 1;
+  background-color: rgb(217, 219, 211);
+}
+
+/* BOOLZAPP */
+
+.boolzapp{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 600px;
+  width: 1100px;
+  background-color: white;
+}
