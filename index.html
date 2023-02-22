@@ -131,15 +131,15 @@
 
         <!-- Inizio User Contacts -->
         <div class="user-contacts flex-grow-1 d-flex flex-column">
-          <div class="user-contact d-flex justify-content-between">
+          <div class="user-contact d-flex justify-content-between" v-for="(contact,index) in contacts">
             <div class="user d-flex">
               <div class="user-avatar">
-                <img src="./img/Goku 3.jpg">    
+                <img :src="contacts[index].avatar">   
               </div>
     
               <div class="user-info">
                 <div class="user-name">
-                  Goku
+                  {{contacts[index].name}}
                 </div>
                 <div class="user-access">
                   Ultimo messaggio inviato

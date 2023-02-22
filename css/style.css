@@ -135,6 +135,10 @@ body{
 }
 
 .user-contact{
+  padding: 5px;
+}
+
+.user-contact > .user{
   padding: 0 5px;
 }
 
