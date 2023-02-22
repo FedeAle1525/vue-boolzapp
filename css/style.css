@@ -80,6 +80,11 @@ body{
   font-size: 16px;
 }
 
+.user-access{
+  font-size: 12px;
+  color: rgb(177, 177, 177);
+}
+
 /* ICONS */
 
 .icons{
