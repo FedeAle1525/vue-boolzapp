@@ -80,7 +80,7 @@ body{
   font-size: 16px;
 }
 
-.user-access, .notif-subtext, .user-time{
+.user-access, .user-time{
   font-size: 12px;
   color: rgb(177, 177, 177);
 }
@@ -127,6 +127,11 @@ body{
 .notif-avatar > i{
   font-size: 14px;
   color: rgb(142, 218, 252);
+}
+
+.notif-subtext{
+  font-size: 12px;
+  color: rgb(107, 115, 118);
 }
 
 .user-search{
