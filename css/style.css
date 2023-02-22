@@ -38,3 +38,16 @@ body{
   width: 1100px;
   background-color: white;
 }
+
+/* HEADER BAPP */
+
+.header-bapp{
+  height: 60px;
+  background-color: rgb(234, 234, 234);
+}
+
+/* MAIN BAPP */
+
+.main-bapp{
+  flex-grow: 1;
+}
