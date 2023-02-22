@@ -131,8 +131,25 @@ body{
 
 .user-search{
   padding: 5px;
+  background-color: rgb(234, 234, 234);
 }
 
 .user-contact{
   padding: 0 5px;
+}
+
+/* MAIN CHAT */
+
+.chat-bar{
+  height: auto;
+  padding: 5px;
+  background-color: rgb(234, 234, 234);
+}
+
+.chat-bar > .col-auto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(107, 115, 118);
+  padding: 0 20px;
 }
