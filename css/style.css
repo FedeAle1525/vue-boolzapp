@@ -52,9 +52,9 @@ body{
   background-color: rgb(234, 234, 234);
 }
 
-/* HEADER USER */
+/* HEADER USER - MAIN USER */
 
-.header-user{
+.header-user, .main-user{
   flex-basis: 35%;
   border-right: 1px solid gray;
 }
@@ -67,7 +67,7 @@ body{
 }
 
 .user-avatar{
-  width: 50px;
+  width: 40px;
   aspect-ratio: 1/1;
   object-fit: fill;
   object-position: center;
@@ -96,13 +96,21 @@ body{
   color: rgb(177, 177, 177);
 }
 
-/* HEADER CHAT */
-.header-chat{
+/* HEADER CHAT - MAIN CHAT */
+
+.header-chat, .main-chat{
   flex-basis: 65%;
 }
+
 
 /* MAIN BAPP */
 
 .main-bapp{
   flex-grow: 1;
+}
+
+/* MAIN USER */
+
+.user-notif{
+  background-color: rgb(142, 218, 252);
 }
