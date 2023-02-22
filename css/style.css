@@ -67,7 +67,7 @@ body{
 }
 
 .user-avatar{
-  width: 40px;
+  width: 42px;
   aspect-ratio: 1/1;
   object-fit: fill;
   object-position: center;
