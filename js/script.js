@@ -45,20 +45,41 @@ createApp({
           visible: true,
           messages: [
             {
-              date: '20/03/2020 16:30:00',
-              message: 'Ciao come stai?',
+              date: '20/03/2020 12:30:00',
+              message: 'Hai finito gli allenamenti?',
               status: 'sent'
             },
             {
-              date: '20/03/2020 16:30:55',
-              message: 'Bene grazie! Stasera ci vediamo?',
+              date: '20/03/2020 12:35:55',
+              message: `E' pronto il pranzo?`,
               status: 'received'
             },
             {
-              date: '20/03/2020 16:35:00',
-              message: 'Mi piacerebbe ma devo andare a fare la spesa.',
+              date: '20/03/2020 12:37:00',
+              message: 'Ci sto lavorando.',
               status: 'sent'
-            }
+            },
+            {
+              date: '20/03/2020 12:38:00',
+              message: 'Allora torno subito.',
+              status: 'received'
+            },
+            {
+              date: '20/03/2020 12:38:00',
+              message: 'Sto morendo di fame!',
+              status: 'received'
+            },
+            {
+              date: '20/03/2020 12:40:00',
+              message: `Questa non mi e' nuova`,
+              status: 'sent'
+            },
+            {
+              date: '20/03/2020 12:41:00',
+              message: `Eheh`,
+              status: 'received'
+            },
+
           ]
         },
 
@@ -69,17 +90,37 @@ createApp({
           messages: [
             {
               date: '28/03/2020 10:10:40',
-              message: 'La Marianna va in campagna',
-              status: 'received'
-            },
-            {
-              date: '28/03/2020 10:20:10',
-              message: 'Sicuro di non aver sbagliato chat?',
+              message: 'Hai cambiato avatar?',
               status: 'sent'
             },
             {
-              date: '28/03/2020 16:15:22',
-              message: 'Ah scusa!',
+              date: '28/03/2020 10:10:10',
+              message: 'Non ti avevo riconosciuto.',
+              status: 'sent'
+            },
+            {
+              date: '28/03/2020 10:15:22',
+              message: `E' il mio aspetto quando utilizzo il mio Bankai`,
+              status: 'received'
+            },
+            {
+              date: '28/03/2020 10:15:22',
+              message: `Cresco di qualche anno.`,
+              status: 'received'
+            },
+            {
+              date: '28/03/2020 10:18:22',
+              message: `Decisamente!`,
+              status: 'sent'
+            },
+            {
+              date: '28/03/2020 10:18:22',
+              message: `E, seppure l'originale ha il suo perche', questo non lo trovo affato male.`,
+              status: 'sent'
+            },
+            {
+              date: '28/03/2020 10:20:22',
+              message: `Allora credo che terro' il nuovo avatar per un po'.`,
               status: 'received'
             }
           ]
@@ -91,13 +132,33 @@ createApp({
           visible: true,
           messages: [
             {
-              date: '10/01/2020 15:30:55',
-              message: 'Lo sai che ha aperto una nuova pizzeria?',
+              date: '10/01/2020 16:30:55',
+              message: 'Hai visto Gon, per caso?',
+              status: 'received'
+            },
+            {
+              date: '10/01/2020 16:31:00',
+              message: 'No! Cerchi un compagno per allenarti?',
               status: 'sent'
             },
             {
-              date: '10/01/2020 15:50:00',
-              message: 'Si, ma preferirei andare al cinema',
+              date: '10/01/2020 16:33:00',
+              message: 'Esatto! Ho ideato una nuova tecnica.',
+              status: 'received'
+            },
+            {
+              date: '10/01/2020 16:35:00',
+              message: 'Sempre sul pezzo.',
+              status: 'sent'
+            },
+            {
+              date: '10/01/2020 16:35:00',
+              message: 'Se lo vedo, lo avviso.',
+              status: 'sent'
+            },
+            {
+              date: '10/01/2020 16:37:00',
+              message: 'Grazie.',
               status: 'received'
             }
           ]
@@ -109,13 +170,28 @@ createApp({
           visible: true,
           messages: [
             {
-              date: '10/01/2020 15:30:55',
-              message: 'Ricordati di chiamare la nonna',
+              date: '10/01/2020 11:25:55',
+              message: 'Partita a scacchi?',
+              status: 'received'
+            },
+            {
+              date: '10/01/2020 11:26:00',
+              message: `Ci provo, ma penso andra' a finire come al solito.`,
               status: 'sent'
             },
             {
-              date: '10/01/2020 15:50:00',
-              message: 'Va bene, stasera la sento',
+              date: '10/01/2020 11:28:00',
+              message: `C'e' sempre margine per migliorare.`,
+              status: 'received'
+            },
+            {
+              date: '10/01/2020 11:29:00',
+              message: `Ovviamente imparando dal migliore`,
+              status: 'sent'
+            },
+            {
+              date: '10/01/2020 11:30:00',
+              message: `Lelouch Lamperouge`,
               status: 'received'
             }
           ]
@@ -127,20 +203,31 @@ createApp({
           visible: true,
           messages: [
             {
-              date: '10/01/2020 15:30:55',
-              message: 'Ciao Claudia, hai novità?',
+              date: '10/01/2020 14:30:55',
+              message: `L'Hokage ha un po' di tempo libero oggi?`,
               status: 'sent'
             },
             {
-              date: '10/01/2020 15:50:00',
-              message: 'Non ancora',
+              date: '10/01/2020 14:35:00',
+              message: 'Temo di no.',
               status: 'received'
             },
             {
-              date: '10/01/2020 15:51:00',
-              message: 'Nessuna nuova, buona nuova',
+              date: '10/01/2020 14:35:00',
+              message: 'Ho ancora un sacco di documenti in pila sulla scrivania',
+              status: 'received'
+            },
+            {
+              date: '10/01/2020 14:40:00',
+              message: 'Allora non le faccio perdere altro tempo.',
               status: 'sent'
-            }
+            },
+            {
+              date: '10/01/2020 14:42:00',
+              message: 'Scusa.',
+              status: 'received'
+            },
+
           ]
         },
 
@@ -150,15 +237,35 @@ createApp({
           visible: true,
           messages: [
             {
-              date: '10/01/2020 15:30:55',
-              message: 'Fai gli auguri a Martina che è il suo compleanno!',
+              date: '10/01/2020 17:15:55',
+              message: 'Organizziamo una nuova Food War?',
+              status: 'received'
+            },
+            {
+              date: '10/01/2020 17:18:00',
+              message: `Un'altra!? Ma ne abbiamo fatta una appena ieri!?`,
               status: 'sent'
             },
             {
-              date: '10/01/2020 15:50:00',
-              message: 'Grazie per avermelo ricordato, le scrivo subito!',
+              date: '10/01/2020 17:20:00',
+              message: `Lo so, ma ho apportato delle modifiche alla ricetta.`,
               status: 'received'
-            }
+            },
+            {
+              date: '10/01/2020 17:22:00',
+              message: `Credo sia inutile provare a dirti di no.`,
+              status: 'sent'
+            },
+            {
+              date: '10/01/2020 17:22:00',
+              message: `Dimmi dove e quando.`,
+              status: 'sent'
+            },
+            {
+              date: '10/01/2020 17:22:00',
+              message: `Stasera, al solito posto!`,
+              status: 'received'
+            },
           ]
         },
 
@@ -168,20 +275,30 @@ createApp({
           visible: true,
           messages: [
             {
-              date: '10/01/2020 15:30:55',
-              message: 'Ciao, andiamo a mangiare la pizza stasera?',
+              date: '10/01/2020 16:30:55',
+              message: 'Ti va di mangiare pizza stasera?',
               status: 'received'
             },
             {
-              date: '10/01/2020 15:50:00',
-              message: 'No, l\'ho già mangiata ieri, ordiniamo sushi!',
+              date: '10/01/2020 16:32:00',
+              message: `Non si puo' rifiutare una buona pizza.`,
               status: 'sent'
             },
             {
-              date: '10/01/2020 15:51:00',
-              message: 'OK!!',
+              date: '10/01/2020 16:32:00',
+              message: 'Soprattutto se preparata da una certa persona.',
+              status: 'sent'
+            },
+            {
+              date: '10/01/2020 16:35:00',
+              message: 'Perfetto, ci vediamo al mio ristorante.',
               status: 'received'
-            }
+            },
+            {
+              date: '10/01/2020 16:37:00',
+              message: `Ho gia' l'acquolina in bocca.`,
+              status: 'sent'
+            },
           ],
         }
 
@@ -198,7 +315,9 @@ createApp({
   methods: {
 
     changeAccount(indexAccount){
+      
       this.indexCurrent = indexAccount;
+
     }
   }
 }).mount('#app')

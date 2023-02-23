@@ -62,12 +62,12 @@
         <!-- Inizio User -->
         <div class="user d-flex align-items-center">
           <div class="user-avatar">
-            <img src="./img/Atem 2.jpg">    
+            <img :src="contacts[indexCurrent].avatar">    
           </div>
 
           <div class="user-info">
             <div class="user-name">
-              Pharaon Atem
+              {{contacts[indexCurrent].name}}
             </div>
             <div class="user-access">
               Ultimo accesso oggi alle 12:00
