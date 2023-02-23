@@ -102,6 +102,10 @@ body{
   flex-basis: 65%;
 }
 
+.header-chat .user-access{
+  color: rgb(107, 115, 118);
+}
+
 
 /* MAIN BAPP */
 
@@ -141,6 +145,13 @@ body{
 
 .user-contact{
   padding: 5px;
+  border-top: 1px solid  rgb(234, 234, 234);
+  border-bottom: 1px solid  rgb(234, 234, 234);
+}
+
+.user-contact.active,
+.user-contact:hover{
+  background-color: rgb(234, 234, 234);
 }
 
 .user-contact > .user{
