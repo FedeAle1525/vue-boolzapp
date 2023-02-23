@@ -334,10 +334,25 @@ createApp({
         }
   
         this.contacts[this.indexCurrent].messages.push(newMessage);
-  
         this.textNewMessage = '';
+
+        setTimeout(this.createNewMessageReceived,1000);
+
       }
       
+    },
+
+    createNewMessageReceived(){
+
+      const newMessage = {
+
+        date: '10/01/2020 16:30:55',
+        message: 'Ok!',
+        status: 'received'
+      }
+
+      this.contacts[this.indexCurrent].messages.push(newMessage);
+
     }
   }
 }).mount('#app')
