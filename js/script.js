@@ -185,8 +185,10 @@ createApp({
           ],
         }
 
-      ]
+      ],
       // Fine Contacts
+
+      indexCurrent: 0
     }
   }
 }).mount('#app')
