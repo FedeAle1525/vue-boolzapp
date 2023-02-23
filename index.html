@@ -132,7 +132,7 @@
         <!-- Inizio User Contacts -->
         <div class="user-contacts flex-grow-1 d-flex flex-column">
           <div class="user-contact d-flex justify-content-between" :class="(index===indexCurrent) ? 'active' : '' " 
-            v-for="(contact,index) in contacts">
+            v-for="(contact,index) in contacts" @click="changeAccount(index)">
 
             <div class="user d-flex">
               <div class="user-avatar">

@@ -188,7 +188,17 @@ createApp({
       ],
       // Fine Contacts
 
-      indexCurrent: 0
+      indexCurrent: 0,
+
+    }
+    // // Fine "return"
+  },
+  // Fine "data()""
+
+  methods: {
+
+    changeAccount(indexAccount){
+      this.indexCurrent = indexAccount;
     }
   }
 }).mount('#app')
