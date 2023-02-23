@@ -12,19 +12,30 @@ createApp({
           messages: [
             {
               date: '10/01/2020 15:30:55',
-              message: 'Hai portato a spasso il cane?',
-              status: 'sent'
+              message: 'Settimana prossima inizierà un nuovo duello di Duel Monster',
+              status: 'received'
             },
             {
               date: '10/01/2020 15:50:00',
-              message: 'Ricordati di stendere i panni',
-              status: 'sent'
+              message: 'Parteciparai anche tu?',
+              status: 'received'
             },
             {
               date: '10/01/2020 16:15:22',
-              message: 'Tutto fatto!',
+              message: 'Non sono così brava, ma verrò a fare il tifo per te!',
+              status: 'sent'
+            },
+            {
+              date: '10/01/2020 16:18:22',
+              message: 'Ci conto!',
               status: 'received'
+            },
+            {
+              date: '10/01/2020 16:20:22',
+              message: 'Sarò in prima fila!',
+              status: 'sent'
             }
+
           ]
         },
 
