@@ -300,12 +300,14 @@ createApp({
               status: 'sent'
             },
           ],
-        }
+        },
 
       ],
       // Fine Contacts
 
       indexCurrent: 0,
+
+      textNewMessage: '',
 
     }
     // // Fine "return"
@@ -315,9 +317,27 @@ createApp({
   methods: {
 
     changeAccount(indexAccount){
-      
+
       this.indexCurrent = indexAccount;
 
+    },
+
+    createNewMessage(){
+
+      if (this.textNewMessage.trim() !== ''){
+
+        const newMessage = {
+
+          date: '10/01/2020 16:30:55',
+          message: this.textNewMessage,
+          status: 'sent'
+        }
+  
+        this.contacts[this.indexCurrent].messages.push(newMessage);
+  
+        this.textNewMessage = '';
+      }
+      
     }
   }
 }).mount('#app')
