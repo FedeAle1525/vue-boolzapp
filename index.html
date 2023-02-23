@@ -70,7 +70,7 @@
               {{contacts[indexCurrent].name}}
             </div>
             <div class="user-access">
-              Ultimo accesso oggi alle 12:00
+              Ultimo accesso oggi alle {{contacts[indexCurrent].messages[indexLastMessage].date.substring(11,16)}}
             </div>
           </div>
 
@@ -150,7 +150,7 @@
             </div>
 
             <div class="user-time">
-              12:00
+              {{contacts[index].messages[indexLastMessage].date.substring(11,16)}}
             </div>
           </div>
           
@@ -205,7 +205,6 @@
   </div>
   <!-- Fine BoolzApp -->
 
-  
   <script src="./js/script.js"></script>
 </body>
 </html>

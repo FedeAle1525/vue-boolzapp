@@ -110,17 +110,17 @@ createApp({
             },
             {
               date: '28/03/2020 10:18:22',
-              message: `Decisamente!`,
+              message: 'Decisamente!',
               status: 'sent'
             },
             {
               date: '28/03/2020 10:18:22',
-              message: `E, seppure l'originale ha il suo perche', questo non lo trovo affato male.`,
+              message: 'E, seppure l\'originale ha il suo perche\', questo non lo trovo affato male.',
               status: 'sent'
             },
             {
               date: '28/03/2020 10:20:22',
-              message: `Allora credo che terro' il nuovo avatar per un po'.`,
+              message: 'Allora credo che terro\' il nuovo avatar per un po\'.',
               status: 'received'
             }
           ]
@@ -307,6 +307,8 @@ createApp({
 
       indexCurrent: 0,
 
+      indexLastMessage: 0,
+
       textNewMessage: '',
 
     }
@@ -353,6 +355,27 @@ createApp({
 
       this.contacts[this.indexCurrent].messages.push(newMessage);
 
+    },
+
+    getIndexLastMessage(){
+
+      let index = 0;
+
+      this.contacts[this.indexCurrent].messages.forEach((mex,i) => {
+
+        if(mex.status === 'received'){
+          index = i;
+        }
+      });
+      
+      this.indexLastMessage = index;
     }
+  },
+  // Fine "methods"
+
+  mounted(){
+
+    this.getIndexLastMessage();
+
   }
 }).mount('#app')
