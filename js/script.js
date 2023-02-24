@@ -430,7 +430,7 @@ createApp({
 
         indexSearch = contact.name.toLowerCase().indexOf(textNew.toLowerCase());
 
-        if (indexSearch === 0){
+        if (indexSearch !== -1){
           listAccountFound.push(contact.name);
         }
 
