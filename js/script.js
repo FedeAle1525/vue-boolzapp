@@ -385,7 +385,7 @@ createApp({
     getTimeLastAccess(indexContact){
 
       let indexMessage = 0;
-      timeLastAccess = '';
+      let timeLastAccess = '';
 
       this.contacts[indexContact].messages.forEach((mex,i) => {
 
@@ -405,6 +405,26 @@ createApp({
       }
 
       return timeLastAccess;
+
+    },
+
+    getLastMessage(indexContact){
+
+      let textLastMessage;
+
+      const indexLastMessage = this.contacts[indexContact].messages.length-1;
+
+      if(indexLastMessage === -1){
+
+        textLastMessage = '';
+
+      } else {
+
+        textLastMessage = this.contacts[indexContact].messages[indexLastMessage].message;
+
+      }
+
+      return textLastMessage;
 
     },
 
