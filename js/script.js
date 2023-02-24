@@ -311,6 +311,8 @@ createApp({
 
       textNewMessage: '',
 
+      textSearchAccount: undefined
+
     }
     // // Fine "return"
   },
@@ -357,25 +359,46 @@ createApp({
 
     },
 
-    getIndexLastMessage(){
+    searchContact(){
 
-      let index = 0;
+      let searchString = this.textSearchAccount
 
-      this.contacts[this.indexCurrent].messages.forEach((mex,i) => {
+      console.log(searchString);
+
+    },
+
+    getTimeLastAccess(indexContact){
+
+      let indexMessage = 0;
+      timeLastAccess = '';
+
+      this.contacts[indexContact].messages.forEach((mex,i) => {
 
         if(mex.status === 'received'){
-          index = i;
+          indexMessage = i;
+          console.log(mex.message);
         }
       });
-      
-      this.indexLastMessage = index;
+
+      if (indexMessage === ''){
+
+        timeLastAccess = '';
+
+      } else {
+
+        timeLastAccess = this.contacts[indexContact].messages[indexMessage].date.substring(11,16);
+
+      }
+
+      return timeLastAccess;
+
     }
   },
   // Fine "methods"
 
-  mounted(){
+  // mounted(){
 
-    this.getIndexLastMessage();
+  //   this.getTimeLastMessage();
 
-  }
+  // }
 }).mount('#app')

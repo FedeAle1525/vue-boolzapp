@@ -70,7 +70,7 @@
               {{contacts[indexCurrent].name}}
             </div>
             <div class="user-access">
-              Ultimo accesso oggi alle {{contacts[indexCurrent].messages[indexLastMessage].date.substring(11,16)}}
+              Ultimo accesso oggi alle {{getTimeLastAccess(indexCurrent)}}
             </div>
           </div>
 
@@ -124,7 +124,8 @@
             <span class="input-group-text">
               <i class="fa-solid fa-magnifying-glass"></i>
             </span>
-            <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat">
+            <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat"
+            v-model="textSearchAccount" @keydown="searchContact()">
           </div>
         </div>
         <!-- Fine User Search -->
@@ -150,7 +151,7 @@
             </div>
 
             <div class="user-time">
-              {{contacts[index].messages[indexLastMessage].date.substring(11,16)}}
+              {{getTimeLastAccess(index)}}
             </div>
           </div>
           
