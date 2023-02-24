@@ -133,17 +133,18 @@
 
         <!-- Inizio User Contacts -->
         <div class="user-contacts flex-grow-1 d-flex flex-column">
-          <div class="user-contact d-flex justify-content-between" :class="(index===indexCurrent) ? 'active' : '' " 
+          <div class="user-contact d-flex justify-content-between" 
+            :class="[(index===indexCurrent) ? 'active' : '', (listSearchAccount.includes(contact.name)) ? '' : 'd-none']"
             v-for="(contact,index) in contacts" @click="changeAccount(index)">
 
             <div class="user d-flex">
               <div class="user-avatar">
-                <img :src="contacts[index].avatar">   
+                <img :src="contact.avatar">   
               </div>
     
               <div class="user-info">
                 <div class="user-name">
-                  {{contacts[index].name}}
+                  {{contact.name}}
                 </div>
                 <div class="user-access">
                   Ultimo messaggio inviato

@@ -313,7 +313,9 @@ createApp({
 
       textNewMessage: '',
 
-      textSearchAccount: undefined
+      textSearchAccount: undefined,
+
+      listSearchAccount: [],
 
     }
     // // Fine "return"
@@ -399,6 +401,19 @@ createApp({
 
       return timeLastAccess;
 
+    },
+
+    createListContactName(){
+
+      let listNames = [];
+
+      this.contacts.forEach(contact => {
+
+        listNames.push(contact.name);
+
+      });
+
+      this.listSearchAccount = listNames;
     }
   },
   // Fine "methods"
@@ -407,14 +422,34 @@ createApp({
 
     textSearchAccount(textNew, textOld){
 
-      console.log(textNew, textOld);
+      let indexSearch;
+
+      let listAccountFound = [];
+
+      this.contacts.forEach(contact => {
+
+        indexSearch = contact.name.toLowerCase().indexOf(textNew.toLowerCase());
+
+        if (indexSearch === 0){
+          listAccountFound.push(contact.name);
+        }
+
+        // console.log(contact.name, textNew, indexSearch, listAccountFound);
+
+        this.listSearchAccount = listAccountFound;
+
+      });
+
+      
     }
+
+  },
+  // Fine "watch"
+
+  mounted(){
+
+    this.createListContactName();
 
   }
 
-  // mounted(){
-
-  //   this.getTimeLastMessage();
-
-  // }
 }).mount('#app')
