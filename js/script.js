@@ -311,6 +311,8 @@ createApp({
 
       indexLastMessage: 0,
 
+      indexChat: 0,
+
       textNewMessage: '',
 
       textSearchAccount: undefined,
@@ -344,6 +346,8 @@ createApp({
 
       if (this.textNewMessage.trim() !== ''){
 
+        const indexChatMex = this.indexCurrent
+
         const newDate = this.generateLocalDate();
 
         const newMessage = {
@@ -353,8 +357,9 @@ createApp({
           status: 'sent'
         }
   
-        this.contacts[this.indexCurrent].messages.push(newMessage);
+        this.contacts[indexChatMex].messages.push(newMessage);
         this.textNewMessage = '';
+        this.indexChat = indexChatMex
 
         setTimeout(this.createNewMessageReceived,1000);
 
@@ -373,7 +378,7 @@ createApp({
         status: 'received'
       }
 
-      this.contacts[this.indexCurrent].messages.push(newMessage);
+      this.contacts[this.indexChat].messages.push(newMessage);
 
     },
 
