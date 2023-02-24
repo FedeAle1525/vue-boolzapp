@@ -1,3 +1,5 @@
+const DateTime = luxon.DateTime;
+
 const { createApp } = Vue
 
 createApp({
@@ -326,13 +328,25 @@ createApp({
 
     },
 
+    generateLocalDate(){
+
+      const localDate = DateTime.now();
+      
+      const stringLocalDate = localDate.toFormat("dd/LL/yyyy HH:mm:ss");
+
+      return stringLocalDate;
+
+    },
+
     createNewMessage(){
 
       if (this.textNewMessage.trim() !== ''){
 
+        const newDate = this.generateLocalDate();
+
         const newMessage = {
 
-          date: '10/01/2020 16:30:55',
+          date: newDate,
           message: this.textNewMessage,
           status: 'sent'
         }
@@ -348,22 +362,16 @@ createApp({
 
     createNewMessageReceived(){
 
+      const newDate = this.generateLocalDate();
+
       const newMessage = {
 
-        date: '10/01/2020 16:30:55',
+        date: newDate,
         message: 'Ok!',
         status: 'received'
       }
 
       this.contacts[this.indexCurrent].messages.push(newMessage);
-
-    },
-
-    searchContact(){
-
-      let searchString = this.textSearchAccount
-
-      console.log(searchString);
 
     },
 
@@ -376,7 +384,6 @@ createApp({
 
         if(mex.status === 'received'){
           indexMessage = i;
-          console.log(mex.message);
         }
       });
 
@@ -395,6 +402,15 @@ createApp({
     }
   },
   // Fine "methods"
+
+  watch: {
+
+    textSearchAccount(textNew, textOld){
+
+      console.log(textNew, textOld);
+    }
+
+  }
 
   // mounted(){
 
