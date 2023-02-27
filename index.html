@@ -133,6 +133,7 @@
 
         <!-- Inizio User Contacts -->
         <div class="user-contacts flex-grow-1 d-flex flex-column">
+          <!-- Soluzione Alternativa: usare la direttiva "v-show" -->
           <div class="user-contact d-flex justify-content-between" 
             :class="[(index===indexCurrent) ? 'active' : '', (listSearchAccount.includes(contact.name)) ? '' : 'd-none']"
             v-for="(contact,index) in contacts" @click="changeAccount(index)">

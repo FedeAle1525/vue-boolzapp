@@ -311,7 +311,7 @@ createApp({
 
       indexLastMessage: 0,
 
-      indexChat: 0,
+      // indexChat: 0,
 
       textNewMessage: '',
 
@@ -329,6 +329,9 @@ createApp({
     changeAccount(indexAccount){
 
       this.indexCurrent = indexAccount;
+
+      // Resetto l'imput del nuovo mex al cambio chat
+      this.textNewMessage = '';
 
     },
 
@@ -359,15 +362,17 @@ createApp({
   
         this.contacts[indexChatMex].messages.push(newMessage);
         this.textNewMessage = '';
-        this.indexChat = indexChatMex
+        // this.indexChat = indexChatMex
 
-        setTimeout(this.createNewMessageReceived,1000);
+        // Per evitare di creare un Secondo Metodo si poteva usare un Arrow Function
+        // Al setTimeout posso passare un terzo paramentro, in questo caso si poteva passare IndexChatMex per tener conto della chat attiva
+        setTimeout(this.createNewMessageReceived,1000,indexChatMex);
 
       }
       
     },
 
-    createNewMessageReceived(){
+    createNewMessageReceived(indexChatMex){
 
       const newDate = this.generateLocalDate();
 
@@ -378,7 +383,7 @@ createApp({
         status: 'received'
       }
 
-      this.contacts[this.indexChat].messages.push(newMessage);
+      this.contacts[indexChatMex].messages.push(newMessage);
 
     },
 
@@ -443,6 +448,7 @@ createApp({
   },
   // Fine "methods"
 
+  // Senza "watch" si poteva creare un metodo che utilizzasse l'".includes" come controllo su input e tornasse valore booleano
   watch: {
 
     textSearchAccount(textNew, textOld){
@@ -453,7 +459,7 @@ createApp({
 
       this.contacts.forEach(contact => {
 
-        indexSearch = contact.name.toLowerCase().indexOf(textNew.toLowerCase());
+        indexSearch = contact.name.toLowerCase().indexOf(textNew.toLowerCase().trim());
 
         if (indexSearch !== -1){
           listAccountFound.push(contact.name);
